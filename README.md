@@ -14,10 +14,10 @@ Designed to eliminate repetitive manual Excel work by turning structural transfo
 - [The Idea](#-the-idea)
 - [What This Enables](#-what-this-enables)
 - [Core Capabilities](#-core-capabilities)
-- [Architecture](#-architecture)
+- [Architecture](#%EF%B8%8F-architecture)
 - [Project Structure](#-project-structure)
 - [Why This Matters](#-why-this-matters)
-- [Roadmap](#-roadmap)
+- [Roadmap](#%EF%B8%8F-roadmap)
 - [License](#-license)
 
 ---
