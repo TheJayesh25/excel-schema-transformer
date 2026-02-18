@@ -97,7 +97,7 @@ The same configuration can be reused across iterations, updates, and batch expor
 
 ---
 
-## Architecture
+## 🏗️ Architecture
 
 The engine operates on three simple principles:
 
@@ -176,7 +176,8 @@ Automating structural transformations:
 
 ---
 
-## Roadmap
+## 🛣️ Roadmap
+
 - CSV support  
 - CLI interface  
 - Structured logging  
