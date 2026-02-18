@@ -1,58 +1,49 @@
-# input_file: data/sample_input.xlsx
-# output_file: data/sample_output.xlsx
-# metadata_rows: 2
-
-# transformations:
-#   - type: move_column
-#     source: E
-#     target: fourth_last
-
 input_file: data/sample_input.xlsx
 output_file: data/sample_output.xlsx
 metadata_rows: 2
 
 transformations:
-  # - type: move_column
-  #   source: E
-  #   target: fourth_last
+  - type: move_column
+    source: E
+    target: fourth_last
 
-  # - type: move_column
-  #   source: B
-  #   target: last
+  - type: move_column
+    source: B
+    target: last
 
-  # - type: swap_ranges
-  #   range1: [E, F]
-  #   range2: [G, H]
+  - type: swap_ranges
+    range1: [E, F]
+    range2: [G, H]
 
-  # - type: relocate_range
-  #   source_range: [E, F]
-  #   insert_at: H
+  - type: relocate_range
+    source_range: [E, F]
+    insert_at: H
 
-  # - type: replace_values
-  #   range: [E, F]
-  #   from: 1
-  #   to: ""
+  - type: replace_values
+    range: [E, F]
+    from: 1
+    to: ""
 
-  # - type: clear_ranges
-  #   ranges:
-  #     - [E, F]
-  #   # scope: data_only
-  #   # scope: metadata_only
-  #   scope: all
+  - type: clear_ranges
+    ranges:
+      - [E, F]
+    # scope: data_only
+    # scope: metadata_only
+    scope: all
 
-  # - type: clear_columns
-  #   columns: [A, C]
-  #   # scope: data_only
-  #   # scope: metadata_only
-  #   scope: all
+  - type: clear_columns
+    columns: [A, C]
+    # scope: data_only
+    # scope: metadata_only
+    scope: all
 
-  # - type: mapping_copy_by_labels
-  #   source_range: [E, F]
-  #   target_range: [G, H]
-  #   copy_value: 1
-  #   # require_target_blank: true
-  #   require_target_blank: false
+  - type: mapping_copy_by_labels
+    source_range: [E, F]
+    target_range: [G, H]
+    copy_value: 1
+    # require_target_blank: true
+    require_target_blank: false
 
   - type: split_column_digits
-    source_column: caseid
+    source_column: ID
     pad_length: 4
