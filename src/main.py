@@ -8,11 +8,6 @@ def run_pipeline(config_path):
         config = yaml.safe_load(f)
 
     df = pd.read_excel(config["input_file"], header=None)
-
-    # for rule in config["transformations"]:
-    #     rule_type = rule["type"]
-    #     transformer = TRANSFORMER_REGISTRY[rule_type]
-    #     df = transformer(df, rule, config)
     
     print(f"\nColumns before applying any rules: {list(df.iloc[0])}")
     print(f"Column labels before applying any rules: {list(df.iloc[1])}\n")
@@ -31,6 +26,7 @@ def run_pipeline(config_path):
 
 if __name__ == "__main__":
     run_pipeline("configs/example_config.yaml")
+
 
 
 
